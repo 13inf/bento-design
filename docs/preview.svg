@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1560" viewBox="0 0 1280 1560" role="img" aria-labelledby="title desc">
+  <title id="title">Bento Design 原创排版示意</title>
+  <desc id="desc">用文字、灰阶和几何图形展示主张、留白、字级与局部渐变，不含产品或品牌素材。</desc>
+  <defs>
+    <linearGradient id="soft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8C63A9"/>
+      <stop offset=".5" stop-color="#5478AD"/>
+      <stop offset="1" stop-color="#548364"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#024F97"/>
+      <stop offset="1" stop-color="#1D6EB6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="1560" fill="#F5F5F7"/>
+  <g font-family="Microsoft YaHei, PingFang SC, sans-serif">
+    <text x="64" y="88" font-size="28" font-weight="600" letter-spacing="2" fill="#1D1D1F">BENTO DESIGN</text>
+    <text x="64" y="130" font-size="20" fill="#6E6E73">文字 / 空间 / 节奏</text>
+    <text x="1216" y="88" font-size="18" text-anchor="end" fill="#6E6E73">原创排版示意</text>
+
+    <rect x="64" y="204" width="744" height="760" rx="32" fill="#FFFFFF"/>
+    <text x="112" y="274" font-size="22" font-weight="500" fill="#6E6E73">先确定，一条主张。</text>
+    <text x="112" y="392" font-size="72" font-weight="700" fill="#1D1D1F">让信息，</text>
+    <text x="112" y="478" font-size="72" font-weight="700" fill="url(#soft)">自有主次。</text>
+    <text x="112" y="570" font-size="24" fill="#6E6E73">先给内容一条主线。</text>
+    <text x="112" y="610" font-size="24" fill="#6E6E73">再让文字、图像与空白彼此配合。</text>
+    <text x="112" y="866" font-size="156" font-weight="500" fill="#E8E8ED">Aa</text>
+    <text x="420" y="826" font-size="22" fill="#6E6E73">字重</text>
+    <line x1="420" y1="846" x2="732" y2="846" stroke="#D2D2D7"/>
+    <text x="420" y="884" font-size="22" fill="#6E6E73">比例与语义断行</text>
+
+    <rect x="832" y="204" width="384" height="368" rx="32" fill="#000000"/>
+    <text x="872" y="270" font-size="20" fill="#A1A1A6">留出空间</text>
+    <text x="872" y="347" font-size="48" font-weight="600" fill="#F5F5F7">留白，</text>
+    <text x="872" y="407" font-size="48" font-weight="600" fill="#F5F5F7">也有分量。</text>
+    <text x="872" y="500" font-size="21" fill="#A1A1A6">让重要的内容先被看见。</text>
+
+    <rect x="832" y="596" width="384" height="368" rx="32" fill="#FFFFFF"/>
+    <text x="872" y="664" font-size="20" fill="#6E6E73">逐卡分工</text>
+    <text x="872" y="736" font-size="42" font-weight="600" fill="#1D1D1F">形式统一。</text>
+    <text x="872" y="790" font-size="42" font-weight="600" fill="#1D1D1F">表达不同。</text>
+    <text x="872" y="892" font-size="28" font-weight="500" fill="#5478AD">字</text>
+    <line x1="926" y1="878" x2="952" y2="878" stroke="#D2D2D7"/>
+    <text x="974" y="892" font-size="28" font-weight="500" fill="#6E6E73">图</text>
+    <line x1="1028" y1="878" x2="1054" y2="878" stroke="#D2D2D7"/>
+    <text x="1076" y="892" font-size="28" font-weight="500" fill="#548364">数</text>
+
+    <rect x="64" y="988" width="456" height="360" rx="32" fill="#FFFFFF"/>
+    <text x="108" y="1056" font-size="22" fill="#6E6E73">示例字级比例</text>
+    <text x="108" y="1195" font-size="110" font-weight="600" fill="#1D1D1F">3:1</text>
+    <text x="108" y="1280" font-size="22" fill="#6E6E73">标题 72 / 说明 24</text>
+
+    <rect x="544" y="988" width="672" height="360" rx="32" fill="#FFFFFF"/>
+    <text x="592" y="1056" font-size="22" fill="#6E6E73">局部用色</text>
+    <text x="592" y="1140" font-size="54" font-weight="600" fill="#1D1D1F">让色彩，</text>
+    <text x="592" y="1208" font-size="54" font-weight="600" fill="url(#blue)">表达性格。</text>
+    <text x="592" y="1280" font-size="22" fill="#6E6E73">一个完整短语，一处平滑过渡。</text>
+
+    <line x1="64" y1="1412" x2="1216" y2="1412" stroke="#D2D2D7"/>
+    <text x="64" y="1464" font-size="20" fill="#6E6E73">大字主张 · 语义断行 · 非对称网格 · 深浅关系</text>
+    <text x="64" y="1506" font-size="17" fill="#6E6E73">仅示意一种方向。根据真实内容和目标画布调整。</text>
+    <text x="1216" y="1506" font-size="17" text-anchor="end" fill="#6E6E73">bento-design</text>
+  </g>
+</svg>

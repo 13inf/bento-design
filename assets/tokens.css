@@ -1,0 +1,162 @@
+/* Bento Design 起步样式；参数为实施建议，不是完整视觉方案或官方规范。 */
+/* 原图数值见 references/reference-measurements.md：卡缝 16/24pt，标准圆角短边×18%。
+   此处 16/24px 卡缝和固定半径为网页适配，不是 pt 换算或 18% 公式的实现。 */
+.bd-surface {
+  --bd-canvas: #f5f5f7;
+  --bd-card: #ffffff;
+  --bd-text: #1d1d1f;
+  --bd-muted: #6e6e73;
+  --bd-accent: #0071e3;
+  --bd-gap-x: 16px;
+  --bd-gap-y: 24px;
+  --bd-radius: 28px;
+  --bd-padding: clamp(24px, 3vw, 40px);
+  color: var(--bd-text);
+  background: var(--bd-canvas);
+  padding: clamp(40px, 7vw, 96px) 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.6;
+}
+
+.bd-surface[data-bd-theme="white"] {
+  --bd-canvas: #ffffff;
+  --bd-card: #f5f5f7;
+}
+.bd-surface[data-bd-theme="dark"] {
+  --bd-canvas: #1d1d1f;
+  --bd-card: #000000;
+  --bd-text: #f5f5f7;
+  --bd-muted: #a1a1a6;
+  --bd-accent: #2997ff;
+}
+.bd-surface[data-bd-theme="black"] {
+  --bd-canvas: #000000;
+  --bd-card: #171918;
+  --bd-text: #f5f5f7;
+  --bd-muted: #a1a1a6;
+  --bd-accent: #2997ff;
+}
+.bd-surface,
+.bd-surface *,
+.bd-surface *::before,
+.bd-surface *::after { box-sizing: border-box; }
+.bd-surface .bd-container { max-width: 1200px; margin-inline: auto; }
+.bd-surface .bd-section-heading { max-width: 900px; margin-bottom: 40px; }
+.bd-surface .bd-eyebrow { color: var(--bd-muted); font-size: 18px; font-weight: 600; }
+.bd-surface .bd-section-heading h2 {
+  margin: 8px 0 0;
+  font-size: clamp(32px, 5.5vw, 72px);
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.bd-surface .bd-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--bd-gap-y) var(--bd-gap-x);
+}
+.bd-surface .bd-card {
+  min-width: 0;
+  padding: var(--bd-padding);
+  color: var(--bd-text);
+  background: var(--bd-card);
+  border-radius: var(--bd-radius);
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+.bd-surface .bd-hero { grid-column: span 2; }
+.bd-surface .bd-hero-tall { grid-row: span 2; }
+.bd-surface .bd-wide { grid-column: span 2; }
+.bd-surface .bd-card[data-bd-tone="dark"] {
+  --bd-card: #000000;
+  --bd-text: #f5f5f7;
+  --bd-muted: #a1a1a6;
+  --bd-accent: #2997ff;
+}
+.bd-surface .bd-card h3 {
+  margin: 0;
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 600;
+  line-height: 1.25;
+}
+.bd-surface .bd-hero h3 { font-size: clamp(28px, 3.5vw, 48px); }
+.bd-surface .bd-card p { margin: 12px 0 0; color: var(--bd-muted); font-size: 17px; }
+.bd-surface .bd-card img { display: block; max-width: 100%; height: auto; }
+.bd-surface .bd-card .bd-value {
+  margin-block: 16px 0;
+  color: var(--bd-text);
+  font-size: clamp(40px, 5vw, 72px);
+  font-weight: 700;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.bd-surface a { color: var(--bd-accent); text-underline-offset: 0.2em; }
+.bd-surface :focus-visible { outline: 3px solid var(--bd-accent); outline-offset: -4px; }
+
+/* 按需启用的文字主卡，保留原来的普通信息卡接口。 */
+.bd-surface .bd-statement {
+  --bd-headline-size: clamp(36px, 5vw, 72px);
+  --bd-copy-size: clamp(16px, calc(var(--bd-headline-size) * 0.3333), 24px);
+}
+.bd-surface .bd-statement .bd-kicker {
+  margin: 0 0 calc(var(--bd-headline-size) * 0.5);
+  color: var(--bd-muted);
+  font-size: var(--bd-copy-size);
+  font-weight: 500;
+  line-height: 1.4;
+}
+.bd-surface .bd-statement .bd-headline {
+  margin: 0;
+  color: var(--bd-text);
+  font-size: var(--bd-headline-size);
+  font-weight: 600;
+  line-height: 1.14;
+  text-wrap: balance;
+}
+.bd-surface .bd-line { display: block; }
+.bd-surface .bd-statement .bd-deck {
+  margin: calc(var(--bd-headline-size) * 0.75) 0 0;
+  max-width: 36em;
+  color: var(--bd-muted);
+  font-size: var(--bd-copy-size);
+  font-weight: 400;
+  line-height: 1.55;
+}
+.bd-surface .bd-gradient { color: var(--bd-text); }
+.bd-surface .bd-gradient-cool {
+  --bd-gradient: linear-gradient(180deg, #024f97, #1d6eb6);
+}
+.bd-surface[data-bd-theme="dark"] .bd-gradient-cool,
+.bd-surface[data-bd-theme="black"] .bd-gradient-cool,
+.bd-surface .bd-card[data-bd-tone="dark"] .bd-gradient-cool {
+  --bd-gradient: linear-gradient(180deg, #7baed1, #2997ff);
+}
+@supports ((background-clip: text) or (-webkit-background-clip: text)) {
+  .bd-surface .bd-gradient {
+    background-image: var(--bd-gradient, linear-gradient(180deg, #024f97, #1d6eb6));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@media (forced-colors: active) {
+  .bd-surface .bd-gradient {
+    background-image: none;
+    color: CanvasText;
+    -webkit-text-fill-color: CanvasText;
+  }
+}
+
+@media (max-width: 900px) {
+  .bd-surface .bd-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bd-surface .bd-hero-tall { grid-row: auto; }
+}
+@media (max-width: 600px) {
+  .bd-surface { --bd-radius: 24px; --bd-gap-y: 16px; padding-inline: 16px; }
+  .bd-surface .bd-grid { grid-template-columns: minmax(0, 1fr); }
+  .bd-surface .bd-hero,
+  .bd-surface .bd-hero-tall,
+  .bd-surface .bd-wide { grid-column: auto; grid-row: auto; }
+}

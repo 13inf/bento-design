@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bento 视觉设计"
+  short_description: "用中文大字、字重反差、局部渐变与非对称网格设计海报和展示页"
+  default_prompt: "使用 $bento-design，先确定我的内容主张与字图关系，再用字重反差、语义断行、局部渐变和有节奏的卡片布局完成设计，保留真实信息并适配目标尺寸。"
