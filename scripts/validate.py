@@ -12,7 +12,8 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {
-    '.gitignore', 'LICENSE', 'NOTICE.md', 'README.md', 'SKILL.md',
+    '.gitignore', 'LICENSE', 'NOTICE.md', 'README.md', 'README.zh-CN.md',
+    'README.en.md', 'SKILL.md',
     'agents/openai.yaml', 'assets/tokens.css',
     'references/typography-color.md', 'references/layout-recipes.md',
     'references/reference-measurements.md',
